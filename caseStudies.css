@@ -34,7 +34,7 @@ h3{
 }
 .hero-section{
     display: flex;
-    flex:2;
+    flex:auto;
     width:100%;
 }
 
@@ -48,11 +48,12 @@ h3{
     width: 90%;
     padding: 0 10% 0 10%;
 }
-
+.hero-image{
+    max-height: 500px;
+}
 .banner{
     background-color: var(--white);
     width: 98.5%;
-    height:21%;
     margin: 0 auto;
     padding: 10px;
     font-weight: bold;
@@ -64,6 +65,7 @@ h3{
 .banner h3{
     text-align: center;
     justify-content: center;
+    padding:20px 20px 10px 20px;
     color: rgb(8, 37, 65);
 }
 
@@ -71,8 +73,8 @@ h3{
     width: 17px;
     height: 17px;
     transform: rotate(45deg);
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid var(--orange);
+    border-right: 2px solid var(--orange);
     margin:1% auto;
 }
 #goal,
@@ -91,7 +93,14 @@ h3{
     font-size: smaller;
     font-style:italic;
     background: #ebf3fc;
+    padding:0 15px 0 15px;
 }
+
+#affinity-diagram{
+    max-width: 422px;
+    max-height: 600px;
+}
+
 @media only screen and (max-width: 500px){
     :root{
         line-height:1.6rem;
