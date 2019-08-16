@@ -24,8 +24,19 @@ h1{
 h2{
     font-family:"Crimson Text", Helvetica , sans-serif;
 }
-h3{
+figure{
     margin:0;
+}
+figcaption{
+    margin:0;
+    font-style: italic;
+    font-size: 0.6rem;
+    line-height: 1rem;
+
+}
+.banner h3{
+    margin:0;
+    font-size:1.5vw;
 }
 #subheader{
     font-size: 2vw;
@@ -36,6 +47,7 @@ h3{
     display: flex;
     flex:auto;
     width:100%;
+    max-height: 500px;
 }
 
 .hero-text{
@@ -46,11 +58,9 @@ h3{
     background-color: var(--blue);
     color: var(--white);
     width: 90%;
-    padding: 0 10% 0 10%;
+
 }
-.hero-image{
-    max-height: 450px;
-}
+
 .banner{
     background-color: var(--white);
     width: 98.5%;
@@ -73,8 +83,8 @@ h3{
     width: 17px;
     height: 17px;
     transform: rotate(45deg);
-    border-bottom: 2px solid var(--orange);
-    border-right: 2px solid var(--orange);
+    border-bottom: 3px solid var(--orange);
+    border-right: 3px solid var(--orange);
     margin:1% auto;
 }
 #goal,
